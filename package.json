@@ -1,0 +1,19 @@
+{
+  "name": "metal",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.176.0",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19"
+  }
+}
