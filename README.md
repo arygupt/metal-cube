@@ -2,6 +2,9 @@
 
 A reactive metallic cube animation for Three.js projects.
 
+![](./cube.gif)
+
+
 ## Run the demo
 
 ```bash
