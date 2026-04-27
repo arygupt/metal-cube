@@ -1,6 +1,6 @@
 # metallic-cube
 
-A reactive metallic cube animation for Three.js projects.
+a reactive metal cube component 
 
 ![](./cube.gif)
 
@@ -8,14 +8,14 @@ A reactive metallic cube animation for Three.js projects.
 ## Run the demo
 
 ```bash
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 ## Use as a TypeScript package
 
 ```bash
-npm install metallic-cube three
+bun install metallic-cube three
 ```
 
 ```ts
@@ -30,6 +30,6 @@ const cube = createMetallicCube({
 ## Build
 
 ```bash
-npm run build
+bun run build
 ```
 
