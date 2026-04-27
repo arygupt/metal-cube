@@ -22,8 +22,6 @@ const cube = createMetallicCube({
   container: document.querySelector('#app')!,
 });
 
-// Later, if needed:
-cube.dispose();
 ```
 
 ## Build
@@ -32,14 +30,3 @@ cube.dispose();
 npm run build
 ```
 
-The package exports ESM, UMD, and TypeScript declarations from `dist/`.
-
-## Python GIF
-
-Generate a standalone GIF with no third-party Python dependencies:
-
-```bash
-python animation.py
-```
-
-This writes `metallic_cube.gif`.
