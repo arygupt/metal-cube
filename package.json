@@ -1,17 +1,34 @@
 {
-  "name": "metal",
-  "private": true,
+  "name": "metallic-cube",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
+  "description": "A reactive metallic cube animation for Three.js projects.",
+  "main": "./dist/metallic-cube.umd.cjs",
+  "module": "./dist/metallic-cube.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/metallic-cube.js",
+      "require": "./dist/metallic-cube.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && tsc -p tsconfig.types.json",
+    "prepack": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
     "three": "^0.176.0"
   },
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "@types/three": "^0.176.0",
     "typescript": "^5.8.3",
     "vite": "^5.4.19"
